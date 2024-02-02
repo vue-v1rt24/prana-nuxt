@@ -2,7 +2,9 @@
 
 <template>
   <div>
-    <h1>Главная</h1>
+    <Header />
+    <Services />
+    <Footer />
   </div>
 </template>
 

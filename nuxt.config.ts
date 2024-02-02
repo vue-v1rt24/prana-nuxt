@@ -8,5 +8,6 @@ export default defineNuxtConfig({
     },
   },
   css: ['assets/css/index.css'],
+  modules: ['@nuxt/image', 'nuxt-viewport'],
   devtools: { enabled: true },
 });
