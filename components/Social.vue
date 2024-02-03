@@ -3,19 +3,19 @@
 <template>
   <ul class="soc">
     <li class="soc__item">
-      <a class="soc__item_link" href="#">
+      <a class="soc__item_link" href="https://vk.com/prana_it" target="_blank" rel="noopener">
         <ImageSocVk />
       </a>
     </li>
 
     <li class="soc__item">
-      <a class="soc__item_link" href="#">
+      <a class="soc__item_link" href="https://t.me/pranainfo" target="_blank" rel="noopener">
         <ImageSocTelegram />
       </a>
     </li>
 
     <li class="soc__item">
-      <a class="soc__item_link" href="#">
+      <a class="soc__item_link" href="https://wa.me/79383069990" target="_blank" rel="noopener">
         <ImageSocWhatsapp />
       </a>
     </li>

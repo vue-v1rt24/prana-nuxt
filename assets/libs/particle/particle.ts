@@ -11,7 +11,16 @@ export const particle = (canvas: HTMLCanvasElement, decisionsSec: HTMLDivElement
   let h = (canvas.height = decisionsSec.offsetHeight * RESOLUTION);
 
   const PARTICLE_COUNT = 400;
-  const CONNECT_DISTANCE = w * 0.05;
+
+  // const CONNECT_DISTANCE = w * 0.05;
+  let CONNECT_DISTANCE = 0;
+
+  if (window.matchMedia('(min-width: 577px)').matches) {
+    CONNECT_DISTANCE = w * 0.05;
+  } else {
+    CONNECT_DISTANCE = w * 0.08;
+  }
+
   const FORCE_DISTANCE = w * 0.1;
 
   const r = (n = 1) => Math.random() * n;
