@@ -69,7 +69,7 @@ onMounted(() => {
         <h1 class="decisions__title">
           Энергичные <br />
           решения для <br />
-          <span>вашего бизнеса111</span>
+          <span>вашего бизнеса</span>
         </h1>
 
         <p class="decisions__desc">
