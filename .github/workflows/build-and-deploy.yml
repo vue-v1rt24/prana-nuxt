@@ -13,6 +13,6 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            cd user-data
+            cd user-data/prana-nuxt
             git pull
             docker compose up -d --build
