@@ -28,7 +28,6 @@ const openModal = () => {
       mainClass: props.classWrapper,
       on: {
         close() {
-          console.log('Модальное окно закрыто');
           emit('closeModalEvent');
         },
       },
@@ -62,7 +61,15 @@ defineExpose({
 .fancybox_modal {
   display: none;
   max-width: v-bind(maxWidth);
+  width: 100%;
   background-color: transparent;
   padding: 0;
+}
+
+/* ================ Медиа-запросы */
+@media (max-width: 576px) {
+  .fancybox_modal {
+    height: 100%;
+  }
 }
 </style>

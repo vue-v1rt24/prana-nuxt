@@ -42,7 +42,7 @@ const contactHandler = () => {
     }
 
     if (resValid.success) {
-      console.log(formData);
+      // console.log(formData);
       emit('sendForm');
     }
   } catch (error) {
@@ -284,5 +284,75 @@ defineExpose({
   font-size: 14px;
   color: var(--colorTextOpacity06);
   margin-top: 24px;
+}
+
+/* ================ Медиа-запросы */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact__desc {
+    font-size: 14px;
+  }
+
+  .contact__form {
+    margin-top: 24px;
+  }
+
+  .form__inputs {
+    row-gap: 16px;
+    padding-bottom: 24px;
+    margin: 24px 0;
+  }
+
+  .form__inp {
+    height: 73px;
+    font-size: 16px;
+    padding: 26px;
+  }
+
+  .form__select_hide_bx {
+    top: 50px;
+  }
+
+  .form__select_hide_val {
+    padding: 19px 26px;
+  }
+
+  .form__select_hide_val_item {
+    font-size: 16px;
+    padding: 16px 16px 16px 0;
+  }
+
+  .contact__submit {
+    height: 79px;
+    font-size: 18px;
+  }
+
+  .btn_bg_1 .btn__arrow .arrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__politica {
+    font-size: 11px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 </style>
